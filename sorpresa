@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sorpresa 🎉</title>
+  <style>
+    body{margin:0;height:100vh;display:flex;justify-content:center;align-items:center;background:#f0f8ff;overflow:hidden;}
+    h1{font-family:sans-serif;color:#333;font-size:2rem;text-align:center;z-index:2;position:relative;}
+    .confetti{position:absolute;width:10px;height:10px;background:gold;top:-10px;animation:fall 5s linear infinite;}
+    @keyframes fall{to{transform:translateY(110vh) rotate(360deg);}}
+  </style>
+</head>
+<body>
+  <h1>¡Una sorpresa para ti! 🎊</h1>
+  <script>
+    for(let i=0;i<50;i++){
+      let c=document.createElement('div');
+      c.className='confetti';
+      c.style.left=Math.random()*100+'vw';
+      c.style.backgroundColor=['#ff6b6b','#feca57','#1dd1a1','#54a0ff'][Math.floor(Math.random()*4)];
+      c.style.animationDuration=2+Math.random()*3+'s';
+      document.body.appendChild(c);
+    }
+  </script>
+</body>
+</html>
