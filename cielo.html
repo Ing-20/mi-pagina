@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bajo las estrellas ✨</title>
+  <style>
+    body{margin:0;background:#000;overflow:hidden;display:flex;justify-content:center;align-items:center;height:100vh;}
+    h1{color:#fff;font-family:'Courier New',monospace;z-index:2;position:relative;}
+    .star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:blink 2s infinite;}
+    @keyframes blink{50%{opacity:0.2;}}
+  </style>
+</head>
+<body>
+  <h1>Siempre juntos bajo el mismo cielo 🌌</h1>
+  <script>
+    for(let i=0;i<100;i++){
+      let s=document.createElement('div');
+      s.className='star';
+      s.style.left=Math.random()*100+'vw';
+      s.style.top=Math.random()*100+'vh';
+      s.style.animationDuration=(1+Math.random()*2)+'s';
+      document.body.appendChild(s);
+    }
+  </script>
+</body>
+</html>
