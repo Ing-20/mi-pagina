@@ -8,11 +8,20 @@
     body{margin:0;height:100vh;display:flex;justify-content:center;align-items:center;background:#f0f8ff;overflow:hidden;}
     h1{font-family:sans-serif;color:#333;font-size:2rem;text-align:center;z-index:2;position:relative;}
     .confetti{position:absolute;width:10px;height:10px;background:gold;top:-10px;animation:fall 5s linear infinite;}
+    
+    .flores span{font-size:3rem;display:inline-block;animation:flotar 3s ease-in-out infinite;}
+    .flores span:nth-child(2){animation-delay:.4s}
+    .flores span:nth-child(3){animation-delay:.8s}
+    @keyframes flotar{0%{transform:translateY(0)}50%{transform:translateY(-15px)}100%{transform:translateY(0)}}
+    
     @keyframes fall{to{transform:translateY(110vh) rotate(360deg);}}
   </style>
 </head>
 <body>
-  <h1>¡Una sorpresa para ti! 🎊</h1>
+  <div>
+    <div class="flores"><span>🌼</span><span>💛</span><span>🌼</span></div>
+    <h1>Un día amarillo solo para ti 🌞</h1>
+  </div>
   <script>
     for(let i=0;i<50;i++){
       let c=document.createElement('div');
