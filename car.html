@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorpresita 🎁</title>
+  <style>
+    body {
+      background: #fceabb;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      background: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ffb74d;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Toca el botón 🎉</h1>
+  <button onclick="document.getElementById('sorpresa').style.display='block'">
+    Ver sorpresa
+  </button>
+  <div id="sorpresa" style="display:none; margin-top:20px;">
+    <h2>💖 Te mando un abrazo enorme 💖</h2>
+    <img src="https://i.imgur.com/oZ4FZ8f.png" width="200">
+  </div>
+</body>
+</html>
